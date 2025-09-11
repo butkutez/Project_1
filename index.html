@@ -1,58 +1,15 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>My Python Project</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 50px;
-      background-color: #f9f9f9;
-      text-align: center;
-    }
-    h1 {
-      color: #2c3e50;
-    }
-    pre {
-      text-align: left;
-      background-color: #272822;
-      color: #f8f8f2;
-      padding: 20px;
-      display: inline-block;
-      text-align: left;
-      overflow-x: auto;
-    }
-    code {
-      font-family: Consolas, monospace;
-    }
-  </style>
-</head>
-<body>
-  <h1>Welcome to My Python Project</h1>
-  <p>This is a demo project showcased on GitHub Pages.</p>
-
-  <h2>Python Code Example:</h2>
-  <pre><code>
-# create the Animal class
+<script type="text/python">
 class Animal:
     def eat(self):
         print("I can eat food")
 
-# create the Dog class
 class Dog(Animal):
     def bark(self):
         print("I can bark")
 
-# create an object of Dog
 dog1 = Dog()
-
-# call the eat() method using the object
 dog1.eat()
-  </code></pre>
-</body>
-</html>
+</script>
 
-<h2>Output:</h2>
-<pre><code>
-I can eat food
-</code></pre>
-
+<script src="https://cdn.jsdelivr.net/npm/brython@3.11.1/brython.min.js"></script>
+<body onload="brython()">
